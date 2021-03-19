@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.HomeFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workout"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:fontFamily="@font/nunito_sans_black"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/yoga"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            app:cardCornerRadius="30dp"
+            android:elevation="50dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="#FFDAB9"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="YOGA"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/nunito_sans_black"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="330dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/lotus" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Body Focus"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:fontFamily="@font/nunito_sans_black"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:rowCount="2"
+            android:columnCount="2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_height="130dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="#F5F5DD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flat belly"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_height="130dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="#F5F5DD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:text="Angle booty"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_height="130dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="#F5F5DD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Toned Arms"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+
+
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_height="130dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="#F5F5DD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Slim Legs"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+
+
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
