@@ -14,6 +14,7 @@ class DashboardActivity : AppCompatActivity() {
     private lateinit var taskBtn: ImageButton
     private lateinit var chatBtn: ImageButton
     private lateinit var notificationBtn: ImageButton
+    private lateinit var profileBtn: ImageButton
 
     private lateinit var mViewPager: ViewPager
     private lateinit var mPagerViewAdapter: PagerViewAdapter
@@ -27,6 +28,7 @@ class DashboardActivity : AppCompatActivity() {
         taskBtn = findViewById(R.id.taskBtn)
         chatBtn = findViewById(R.id.chatBtn)
         notificationBtn = findViewById(R.id.notificationBtn)
+        profileBtn = findViewById(R.id.profileBtn)
 
 
         //onclick listner
@@ -51,12 +53,16 @@ class DashboardActivity : AppCompatActivity() {
             mViewPager.currentItem = 3
 
         }
+        profileBtn.setOnClickListener {
+            mViewPager.currentItem = 4
+
+        }
 
 
 
         mPagerViewAdapter = PagerViewAdapter(supportFragmentManager)
         mViewPager.adapter = mPagerViewAdapter
-        mViewPager.offscreenPageLimit = 4
+        mViewPager.offscreenPageLimit = 5
 
 
 
@@ -95,6 +101,8 @@ class DashboardActivity : AppCompatActivity() {
             taskBtn.setImageResource(R.drawable.calendar_1)
             chatBtn.setImageResource(R.drawable.chat_1)
             notificationBtn.setImageResource(R.drawable.notification_1)
+            profileBtn.setImageResource(R.drawable.profile_1)
+
 
         }
         if (position == 1) {
@@ -102,6 +110,8 @@ class DashboardActivity : AppCompatActivity() {
             taskBtn.setImageResource(R.drawable.calendar_2)
             chatBtn.setImageResource(R.drawable.chat_1)
             notificationBtn.setImageResource(R.drawable.notification_1)
+            profileBtn.setImageResource(R.drawable.profile_1)
+
 
 
         }
@@ -110,6 +120,8 @@ class DashboardActivity : AppCompatActivity() {
             taskBtn.setImageResource(R.drawable.calendar_1)
             chatBtn.setImageResource(R.drawable.chat_2)
             notificationBtn.setImageResource(R.drawable.notification_1)
+            profileBtn.setImageResource(R.drawable.profile_1)
+
 
         }
         if (position == 3) {
@@ -117,6 +129,16 @@ class DashboardActivity : AppCompatActivity() {
             taskBtn.setImageResource(R.drawable.calendar_1)
             chatBtn.setImageResource(R.drawable.chat_1)
             notificationBtn.setImageResource(R.drawable.notification_2)
+            profileBtn.setImageResource(R.drawable.profile_1)
+
+
+        }
+        if (position == 4) {
+            homeBtn.setImageResource(R.drawable.home_1)
+            taskBtn.setImageResource(R.drawable.calendar_1)
+            chatBtn.setImageResource(R.drawable.chat_1)
+            notificationBtn.setImageResource(R.drawable.notification_1)
+            profileBtn.setImageResource(R.drawable.profile_2)
 
         }
 

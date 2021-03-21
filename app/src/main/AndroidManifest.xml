@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StayFit">
-        <activity android:name=".YogaActivity"></activity>
+        <activity android:name=".activities.Google_LoginActivity"></activity>
+        <activity android:name=".YogaActivity" />
         <activity android:name=".BmiCalculatorActivity" />
         <activity android:name=".activities.DashboardActivity" />
         <activity android:name=".activities.RegistrationActivity" />
